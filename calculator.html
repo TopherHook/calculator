@@ -12,42 +12,42 @@
                 <!-- display -->
                 <table class="display">
                     <tr>
-                        <td><input id="result" placeholder="0" type="text" size="9"></td>
+                        <td><input id="result" placeholder="0" type="text" size="10"></td>
                     </tr>
                 </table>
 
                 <!-- buttons -->
                 <table class="buttons">
                     <tr>
-                        <td><button class="button special" value="c">AC</button></td>
+                        <td><button class="button special" value="c" onclick="clrDisplay()">AC</button></td>
                         <td><button class="button special" value="+/-">+/-</button></td>
                         <td><button class="button special" value="%">%</button></td>
                         <td><button class="button operator" value="/">÷</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="button number" value="7" onclick="display('7')">7</button></td>
-                        <td><button class="button number" value="8" onclick="display('8')">8</button></td>
-                        <td><button class="button number" value="9" onclick="display('9')">9</button></td>
+                        <td><button class="button number" value="7" onclick="display(value)">7</button></td>
+                        <td><button class="button number" value="8" onclick="display(value)">8</button></td>
+                        <td><button class="button number" value="9" onclick="display(value)">9</button></td>
                         <td><button class="button operator" value="*">x</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="button number" value="4" onclick="display('4')">4</button></td>
-                        <td><button class="button number" value="5" onclick="display('5')">5</button></td>
-                        <td><button class="button number" value="6" onclick="display('6')">6</button></td>
+                        <td><button class="button number" value="4" onclick="display(value)">4</button></td>
+                        <td><button class="button number" value="5" onclick="display(value)">5</button></td>
+                        <td><button class="button number" value="6" onclick="display(value)">6</button></td>
                         <td><button class="button operator" value="-">–</button></td>
                     </tr>
 
                     <tr>
-                        <td><button class="button number" value="1" onclick="display('1')">1</button></td>
-                        <td><button class="button number" value="2" onclick="display('2')">2</button></td>
-                        <td><button class="button number" value="3" onclick="display('3')">3</button></td>
+                        <td><button class="button number" value="1" onclick="display(value)">1</button></td>
+                        <td><button class="button number" value="2" onclick="display(value)">2</button></td>
+                        <td><button class="button number" value="3" onclick="display(value)">3</button></td>
                         <td><button class="button operator" value="+">+</button></td>
                     </tr>
 
                     <tr>
-                        <td colspan="2"><button id="zero" class="button number" value="0">0</button></td>
+                        <td colspan="2"><button id="zero" class="button number" value="0" onclick="display(value)">0</button></td>
                         <td><button class="button number" value=".">.</button></td>
                         <td><button class="button operator" value="=">=</button></td>
                     </tr>

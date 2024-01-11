@@ -14,14 +14,14 @@ main {
     margin: 15%;
 }
 
-/* .display {
+.display {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: auto;
     height: 50px;
     margin-bottom: 10px;
-} */
+} 
 
 #result {
     text-align: right;
