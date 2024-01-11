@@ -11,3 +11,9 @@ function percent() {
     let y = eval(x / 100);
     document.getElementById("result").value = y;
 }
+
+function posNeg() {
+    let x = document.getElementById("result").value;
+    let y = eval(x * -1);
+    document.getElementById("result").value = y;
+}
